@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wordle</title>
+    <link rel="stylesheet" href="wordle.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Jostle</h1>
+        <div class="grid">
+            <div class="row" id="fila-1">
+                <div class="cell" id="PrimeraCasillaFilaUno"></div>
+                <div class="cell" id="SegundaCasillaFilaUno"></div>
+                <div class="cell" id="TerceraCasillaFilaUno"></div>
+                <div class="cell" id="CuartaCasillaFilaUno"></div>
+                <div class="cell" id="QuintaCasillaFilaUno"></div>
+            </div>
+            <div class="row" id="fila-2">
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+            </div>
+            <div class="row" id="fila-3">
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+            </div>
+            <div class="row" id="fila-4">
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+            </div>
+            <div class="row" id="fila-5">
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+            </div>
+            <div class="row" id="fila-6">
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+            </div>
+        </div>
+        <div class="input-container">
+            <input type="text" name="word-input" id="word-input" minlength="5" maxlength="5" placeholder="Ingrese palabra" />
+            <button id="submit-button" onclick="ingresarPalabra()">Enviar</button>
+            <button id="refresh-button" onclick="refreshGame()">Refrescar</button>
+        </div>
+    </div>
+    <script src="wordle.js"></script>
+</body>
+</html>
